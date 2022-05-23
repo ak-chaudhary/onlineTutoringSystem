@@ -1,19 +1,49 @@
 <%@page import="project.ConnectionProvider"%>
-<%@ page import="java.sql.*" %>
-<%
-String name=session.getAttribute("name").toString();
-String product_id=request.getParameter("id");
-try{
-	Connection con=ConnectionProvider.getcon();
-	Statement st=con.createStatement();
-	st.executeUpdate("delete from cart where name='"+name+"' and product_id='"+product_id+"' and address is Null");
-	response.sendRedirect("allProductEditProduct.jsp?msg=removed");
-}
-catch(Exception e){
-	
-	System.out.println(e);
-	
-}
+<%@page import="java.sql.*"%>
+<%@include file="adminHeader.jsp" %>
+<%@include file="../footer.jsp" %>
 
-
-%>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/addNewLesson-style.css">
+		<title>Delete Classes</title>
+		<style>
+		.back
+		{
+		  color: white;
+		  margin-left: 2.5%
+		}
+		</style>
+	</head>
+	
+	<body>
+		 <h2><a class="back" href="allProductEditProduct.jsp"><i class='fas fa-arrow-circle-left'> Back</i></a></h2>
+		<%
+		String id=request.getParameter("id");
+		try{
+			Connection con=ConnectionProvider.getcon();
+			Statement st1=con.createStatement();
+			ResultSet rs=st1.executeQuery("select *from product where id='"+id+"'");
+			while(rs.next())
+				{
+				%>
+				<form action="deleteProductAction.jsp" method="post">
+					<input type="hidden" name="id" value="<% out.println(id);%>">
+					
+				
+					
+					 <hr>
+					</div>
+					 <button class="button">Delete </button>
+				 </form>
+				<%
+				}
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}%>
+		
+	</body>
+	<br><br><br>
+	</body>
+</html>

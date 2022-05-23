@@ -6,6 +6,9 @@
 <title>Login</title>
 </head>
 <body>
+
+
+
 <div id='container'>
   <div class='signup'>
   <form action="loginAction.jsp" method="post">
@@ -38,8 +41,8 @@
 <%} %>
 
 
-    <h2>Online Tutoring</h2>
-    <p>The Online tutoring system helps to learn online easily online</p>
+    <h2>Online Tutoring For Buddhist Center</h2>
+    <p>This helps you to learn online easily and be close with your teacher and the institute</p>
   </div>
 </div>
 

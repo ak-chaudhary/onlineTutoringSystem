@@ -10,21 +10,25 @@
 <body>
 <div style="color: white; text-align: center; font-size: 30px;">About <i class="fa fa-address-book"></i></div>
 <div style="background-color: white; padding:35px; font-size: 30px;">
-Learn online
+Learn Online Easily
 <br>
 Hey everyone!!
 <br>
-We guve your support how to profress studies.
+We give your support how to progress studies.
 & and motivated.
 <br>
 
-So kindly view our app.
+So kindly view our App.
 <br>
+Best supoortive Website
+<br><br>
 Contact us at :- kash0865@gmail.com
 <br>
 or
 <br>
 contact us at instagram :- kash0865
+<br><br>
+Address :- Vidyartha Lankara maha Privena, Dampallessa, Narammala, Kurunagala, Sri Lanka 
 </div>
 
 </body>

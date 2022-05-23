@@ -11,10 +11,16 @@
     <div class="topnav sticky">
     <% String email=session.getAttribute("email").toString(); %>
    
-            <center><h2>Online Tutoring (learn Easily)</h2></center>
+            <center><h2>Online Tutoring for Buddhist Center</h2></center>
             <a href="addNewProduct.jsp">Add New Class <i class='fas fa-plus-square'></i></a>
             <a href="allProductEditProduct.jsp">All Class & Edit Class <i class='fab fa-elementor'></i></a>
-            <a href="messagesReceived.jsp">Messages Received <i class='fas fa-comment-alt'></i></a>
+            <a href="Tutorial-insert.jsp">Add Tutorial <i class="fas fa-archive"></i></a>
+            <a href="addNewLesson.jsp">Add Lesson<i class="fas fa-archive"></i></a>
+             <a href="allLessonEditLesson.jsp">Add Lesson Edit<i class="fas fa-archive"></i></a>
+            
+             <a href="index.html">Add schedule <i class=""></i></a>
+             <a href="index.html">Notice And Appointment <i class=""></i></a>
+             <a href="messagesReceived.jsp">Messages Received <i class='fas fa-comment-alt'></i></a>
             <a href="ordersReceived.jsp">subscribtion Received <i class="fas fa-archive"></i></a>
             <a href="../logout.jsp">Logout <i class='fas fa-share-square'></i></a>
           </div>
